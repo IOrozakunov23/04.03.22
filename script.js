@@ -1,10 +1,8 @@
-const button = document.querySelector("example1 button");
-const span = document.querySelector("example1 span");
-
-span.textContent = localStorage.getItem("example1-number") ?? 0;
-
-button.addEventListener("click", function () {
-  span.textContent++;
-
-  localStorage.setItem("example1-number", span.textContent);
-});
+const example1Span = document.querySelector("#example-1 span");
+example1Span.textContent = localStorage.getItem("example-1-number") ?? 0;
+document
+  .querySelector("#example-1 button")
+  .addEventListener("click", function () {
+    example1Span.textContent--;
+    localStorage.setItem("example-1-number", example1Span.textContent);
+  });
