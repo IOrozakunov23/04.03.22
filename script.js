@@ -6,3 +6,6 @@ document
     example1Span.textContent--;
     localStorage.setItem("example-1-number", example1Span.textContent);
   });
+
+const example3Input = document.querySelector('example-3-input');
+example3Input.value
