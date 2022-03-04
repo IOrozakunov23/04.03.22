@@ -1,7 +1,7 @@
 const button = document.querySelector('example1 button');
 const span = document.querySelector('example1 span');
 
-span.textContent = localStorage.getItem('example1')
+span.textContent = localStorage.getItem('example1-number')?? "aa";
 
 button.addEventListener('click', function() {
   span.textContent++;
